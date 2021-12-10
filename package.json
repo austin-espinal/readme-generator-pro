@@ -1,0 +1,22 @@
+{
+  "name": "readme-generator-pro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/austin-espinal/readme-generator-pro.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/austin-espinal/readme-generator-pro/issues"
+  },
+  "homepage": "https://github.com/austin-espinal/readme-generator-pro#readme",
+  "dependencies": {
+    "inquirer": "^8.2.0"
+  }
+}
