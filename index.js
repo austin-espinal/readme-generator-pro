@@ -23,7 +23,7 @@ const init = () => {
         {
             type: 'input',
             name: 'title',
-            message: 'what is the name of the project? (required)',
+            message: 'What is the name of the project?',
             validate: projectNameInput => {
                 if (projectNameInput) {
                     return true;
@@ -143,29 +143,27 @@ const init = () => {
                     return false;
                 }
             }
-        },
-        {
-            type: 'confirm',
-            name: 'confirmAdd',
-            message: 'would you like to create another high quality README?',
-            default: false
         }
     ])
     .then(markdownData => {
+        console.log(markdownData);
         questions.push(markdownData);
-        if (markdownData.confirmAdd) {
-            return promptProject(markdownData);
-        } else {
-            return markdownData;
-        }
-    });
+        return generateMarkdown(markdownData);
+    })
+    // .then(readMe => {
+    //     return writeToFile(readMe);
+    // })
+    // .catch(err => {
+    //     console.log(err);
+    // });
 };
 
 // Function call to initialize app
 init()
-.then(markdownData => {
-    return generateMarkdown(markdownData);
-})
+// .then(markdownData => {
+//     console.log(markdownData);
+//     return generateMarkdown(markdownData);
+// });
 .then(readME => {
     return writeToFile(readME);
 })
