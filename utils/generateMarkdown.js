@@ -60,9 +60,9 @@ ${other.tests}
 
 ## Questions
 
-${other.github}
-${other.link}
-${other.email}
+${other.github}  
+${other.link}  
+${other.email}  
 
 List above is my Github and email. These are good ways to reach me for additional questions. 
 `;
