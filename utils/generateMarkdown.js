@@ -4,9 +4,26 @@ function renderLicenseBadge(license) {
   if (license === 'NONE') {
     return '';
   }
-  return`
-  ![badmath](https://img.shields.io/static/v1?label=license&message=${license}&color=green)
-  `;
+  if (license === 'MIT') {
+    return `
+    ![badge](https://img.shields.io/badge/license-MIT-green)
+    `;
+  }
+  if (license === 'Apache 2.0') {
+    return `
+    ![badge](https://img.shields.io/badge/license-Apache%202.0-green)
+    `;
+  }
+  if (license === 'GNU General Public 3.0') {
+    return `
+    ![badge](https://img.shields.io/badge/license-GNU-General-Public-3.0-green)
+    `;
+  }
+  if (license === 'Creative Common Zero 1.0') {
+    return `
+    ![badge](https://img.shields.io/badge/license-Creative%20Common%20Zero%201.0-green)
+    `;
+  }
 };
 
 // TODO: Create a function that returns the license link
@@ -100,8 +117,8 @@ ${other.tests}
 
 ## Questions
 
-[${other.github}](https://github.com/${other.github})   
-${other.email}  
+Github: [${other.github}](https://github.com/${other.github})   
+Email: [${other.email}](mailto:${other.email})  
 
 ${other.add} 
 `;
