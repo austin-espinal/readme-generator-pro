@@ -120,19 +120,6 @@ const init = () => {
         },
         {
             type: 'input',
-            name: 'link',
-            message: 'Enter your github link to the project repo.',
-            validate: linkInput => {
-                if (linkInput) {
-                    return true;
-                } else {
-                    console.log('please enter your github repo link!');
-                    return false;
-                }
-            }
-        },
-        {
-            type: 'input',
             name: 'email',
             message: 'Enter your email.',
             validate: mailInput => {
@@ -140,6 +127,19 @@ const init = () => {
                     return true;
                 } else {
                     console.log('please enter your email!');
+                    return false;
+                }
+            }
+        },
+        {
+            type: 'input',
+            name: 'add',
+            message: 'If someone has additional questions, please enter instructions on the best way to reach you.',
+            validate: mailInput => {
+                if (mailInput) {
+                    return true;
+                } else {
+                    console.log('Please enter instructions on how to reach you with additional questions');
                     return false;
                 }
             }
