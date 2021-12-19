@@ -22,7 +22,7 @@ To install the project, One must download the zip file from the Github repositor
 
 ## Usage 
 
-https://watch.screencastify.com/v/DoW2VLW9LqVpvQZLjVrH
+https://watch.screencastify.com/v/G1SDfrqnU9cpVwoEnsfW
 
 A link to a video on how to use the application can be found above.
 
