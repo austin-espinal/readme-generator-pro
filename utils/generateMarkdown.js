@@ -31,22 +31,22 @@ if (license === 'Creative Common Zero 1.0') {
 function renderLicenseLink(license) {
 if (license === 'MIT') {
   return `
-  https://choosealicense.com/licenses/mit/
+  [MIT](https://choosealicense.com/licenses/mit/)
   `;
 }
 if (license === 'Apache 2.0') {
   return `
-  https://choosealicense.com/licenses/apache-2.0/
+  [Apache 2.0](https://choosealicense.com/licenses/apache-2.0/)
   `;
 }
 if (license === 'GNU General Public 3.0') {
   return `
-  https://choosealicense.com/licenses/gpl-3.0/
+  [GNU General Public 3.0](https://choosealicense.com/licenses/gpl-3.0/)
   `;
 }
 if (license === 'Creative Common Zero 1.0') {
   return `
-  https://choosealicense.com/licenses/cc0-1.0/
+  [Creative Common Zero 1.0](https://choosealicense.com/licenses/cc0-1.0/)
   `;
 }
 if (license === 'NONE') {

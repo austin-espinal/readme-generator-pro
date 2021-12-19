@@ -49,7 +49,7 @@ const init = () => {
         {
             type: 'input',
             name: 'installation',
-            message: 'Enter the step by step directions for installing your project.',
+            message: 'Provide directions for installing everything necessary to be able to run the project.',
             validate: installInput => {
                 if (installInput) {
                     return true;
@@ -62,7 +62,7 @@ const init = () => {
         {
             type: 'input',
             name: 'usage',
-            message: 'Provide directions on how to use your project.',
+            message: 'Enter step by step directions on how to run/use your project.',
             validate: useInput => {
                 if (useInput) {
                     return true;
@@ -75,7 +75,7 @@ const init = () => {
         {
             type: 'list',
             name: 'license',
-            message: 'Please choose from the list of licenses that best apply to your project. If none apply or unsure, please choose none',
+            message: 'Please choose one of the licenses from the list that best apply to your project. If none apply or unsure, please choose none',
             choices: ['NONE', 'MIT', 'Apache 2.0', 'GNU General Public 3.0', 'Creative Common Zero 1.0'],
             default: 'NONE'
         },
@@ -95,7 +95,7 @@ const init = () => {
         {
             type: 'input',
             name: 'tests',
-            message: 'Please provide any way to test your application and directions on how to run it.',
+            message: 'Please provide any way to test your application and directions on how to.',
             validate: testInput => {
                 if (testInput) {
                     return true;
